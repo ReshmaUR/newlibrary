@@ -1,63 +1,88 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    /* background: #34495e; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.box{
-    width: 300px;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* background: #191919; */
-    text-align: center;
-    border-radius: 50px;
-    background: rgba(0,0,0,0.8);
-    
+/* header styling */
+.navbar-bright {
+  background-color:#111166;
+  color:#fff;
+  margin-bottom: 0;
+  border-width: 0;
 }
-.box h1{
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
+.navbar a {
+  font-family:'Oswald',arial narrow,sans-serif;
 }
-.entry{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #3498db;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
+/* footer */
+footer {
+  width: 100%;
+  margin-top:42%;
+  background-color:#cecece;
+  height: 5em;
 }
-.entry:focus{
-    width: 280px;
-    border-color: #2ecc71;
-}
-.sub{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #2ecc71;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-}
-.sub:hover{
-   background: #2ecc71;
+#newicon{
+  padding-top: 12px;
 }
 
+/* home styling */
+.navbar-bright a {
+  color:#ccccdd;
+  font-size:14px;
+  text-transform: uppercase;
+  letter-spacing:.08em;
+} 
+.navbar-bright li > a:hover {
+  background-color:#000044;
+}
+/* form */
+.box{
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  border-radius: 50px;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;    
+}
+.box h1{
+  color: white;
+  font-weight: 500;
+}
+.entry{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.entry:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.sub{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.sub:hover{
+  background: #2ecc71;
+}
