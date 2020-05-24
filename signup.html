@@ -24,7 +24,7 @@
   <!-- end of header -->
   <!-- form -->
   <div class="form">
-    <form action="#" class="box" onsubmit="return validate2();">
+    <form action="#" class="box" onkeyup="return validate2();">
       <h1>SignUp Here</h1>
       <input type="text" class="entry" name="" placeholder="Username" required>
       <input type="text" class="entry" id="email" name="" placeholder="Email id" required>
@@ -36,9 +36,10 @@
       <input type="password" class="entry" id="password_con" name="" placeholder="Confirm Password" required>
       <span id="error_pass_con"></span>
       <input type="submit" class="sub" name="" value="Create account">
-    </form>
+    </form>  
   </div>
   <!-- end of form -->
+  <img id="message" width="300" height="300">
   <!-- footer -->
   <footer>
     <div class="container">

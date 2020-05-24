@@ -82,10 +82,18 @@ body {
 /* footer */
 footer {
   width: 100%;
-  margin-top:52%;
+  margin-top:250px;
+  /* 52% */
   background-color:#cecece;
   height: 5em;
 }
 #newicon{
   padding-top: 12px;
+}
+#message{
+  /* padding-left: 800px; */
+  margin-top: 200px;
+  margin-left: 950px;
+  border-radius: 50px;
+  opacity: 0.8;
 }
