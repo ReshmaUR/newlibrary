@@ -30,12 +30,12 @@ body {
     width: 400px;
     padding: 40px;
     position: absolute;
-    top: 60%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     border-radius: 50px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     z-index: 0;
     overflow: hidden;
 }
@@ -75,14 +75,16 @@ body {
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
+    font-size: 18px;
 }
 .sub:hover{
    background: #2ecc71;
+   color: black;
 }
 /* footer */
 footer {
   width: 100%;
-  margin-top:250px;
+  margin-top:54%;
   /* 52% */
   background-color:#cecece;
   height: 5em;
@@ -95,5 +97,9 @@ footer {
   margin-top: 200px;
   margin-left: 950px;
   border-radius: 50px;
-  opacity: 0.8;
+  opacity: 0.7;
+}
+#error,#error_mob,#error_pass,#error_pass_con{
+  font-family: cursive;
+  font-size: 16px;
 }

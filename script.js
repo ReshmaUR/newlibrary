@@ -71,46 +71,48 @@ function validate2(){
             document.getElementById("mobile").style.border = "2px solid #2ecc71";
             // return true;
             if(regexp1.test(password)){
-                document.getElementById("error_pass").innerHTML = "Password is weak";
+                document.getElementById("error_pass").innerHTML = "Password is weak, include number and special character too";
                 document.getElementById("error_pass").style.color = "orange";
                 document.getElementById("password").style.border = "2px solid orange";
-                document.getElementById("message").src = "images/passora.jpg";
+                // document.getElementById("message").src = "images/passora.jpg";
                 // include number and special character orange
                 return false;
             }
             if(regexp2.test(password)){
-                document.getElementById("error_pass").innerHTML = "Looking good";
+                document.getElementById("error_pass").innerHTML = "Looking good!!! include a special character...";
                 document.getElementById("error_pass").style.color = "yellow";
                 document.getElementById("password").style.border = "2px solid yellow";
-                document.getElementById("message").src = "images/passyel.jpg";
+                // document.getElementById("message").src = "images/passyellow.jpg";
                 return false;
             }
             if(regexp3.test(password)){
-                document.getElementById("error_pass").innerHTML = "";
+                document.getElementById("error_pass").innerHTML = "Strong password";
                 document.getElementById("error_pass").style.color = "green";
                 document.getElementById("password").style.border = "2px solid #2ecc71";
-                document.getElementById("message").src = "images/passgreen.jpg";
+                // document.getElementById("message").src = "images/passgreen.jpg";
                 // return true;
                 if(password == password_con){
                     document.getElementById("error_pass_con").innerHTML = "";
+                    document.getElementById("error_pass").innerHTML = "";
                     // document.getElementById("error_pass_con").style.color = "green";
-                    document.getElementById("error_pass_con").style.border = "2px solid #2ecc71";
-                    document.getElementById("message").src = "images/okay.jpg";
+                    // document.getElementById("error_pass_con").style.border = "2px solid #2ecc71";
+                    document.getElementById("password_con").style.border = "2px solid #3498db";
+                    // document.getElementById("message").src = "images/okay.jpg";
                     return true;
                 }
                 else{
-                    document.getElementById("error_pass_con").innerHTML = "";
-                    // document.getElementById("error_pass_con").style.color = "red";
-                    // document.getElementById("password_con").style.border = "2px solid red";
-                    document.getElementById("message").src = "images/same.jpg";
+                    document.getElementById("error_pass_con").innerHTML = "Both password should be same";
+                    document.getElementById("error_pass_con").style.color = "red";
+                    document.getElementById("password_con").style.border = "2px solid red";
+                    // document.getElementById("message").src = "images/same2.jpg";
                     return false;
                     }
             }
             else{
-                document.getElementById("error_pass").innerHTML = "Password should be in proper format";
+                document.getElementById("error_pass").innerHTML = "Password should contain minimum 8 characters includig uppercase and lowercase letters,numbers and special charcter";
                 document.getElementById("error_pass").style.color = "red";
                 document.getElementById("password").style.border = "2px solid red";
-                document.getElementById("message").src = "images/passred.jpg";
+                // document.getElementById("message").src = "images/passredd.jpg";
                 return false;
                 }
         }
@@ -127,4 +129,5 @@ function validate2(){
         document.getElementById("email").style.border = "2px solid red";
         return false;
     }
+    
 }

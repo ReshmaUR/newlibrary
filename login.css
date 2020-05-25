@@ -82,7 +82,13 @@ footer {
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
+  font-size: 18px;
 }
 .sub:hover{
   background: #2ecc71;
+  color: black;
+}
+#error,#error_pass{
+  font-family: cursive;
+  font-size: 16px;
 }
